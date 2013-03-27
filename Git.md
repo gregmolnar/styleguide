@@ -14,7 +14,7 @@ Please add to this guide if you find any particular patterns or styles that we'v
   * Optionally prefix the message with `area: ` where *area* is a filename or identifier for the general area of the code being modified.
 * The body of the commit message should be:
   * Verbose.
-  * Use correct grammer and full punctuation.
+  * Use correct grammar and full punctuation.
   * Wrapped to 72 characters to allow for the standard indentation from git log, and to leave room for quoting.
 
 Example of an ideal commit message:
