@@ -72,6 +72,7 @@ All `end`'s should be consistently outdented if you do this correctly.
 
 ## Naming
 
+* Only the names of potentially *dangerous* methods should end with an exclamation mark. Bang methods should only exist if a non-bang method exists.
 * Use `snake_case` for methods.
 * Use `CamelCase` for classes and modules. (Keep acronyms like HTTP, RFC, XML uppercase.)
 * Use `SCREAMING_SNAKE_CASE` for other constants.
