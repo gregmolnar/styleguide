@@ -37,8 +37,9 @@ All `end`'s should be consistently outdented if you do this correctly.
 
 ## Syntax
 
-* Only use parentheses when absolutely required.
-* Use `def` with **no** parentheses around arguments.
+* **Seattle Style**
+  * Only use parentheses when absolutely required.
+  * Use `def` with **no** parentheses around arguments.
 * Never use `for`, unless you exactly know why.
 * Use `then` sparingly. One word conditionals AND code blocks are pretty much the only excuse.
 * Use `&&`/`||` for boolean expressions, `and`/`or` for control flow. (Rule of thumb: If you have to use outer parentheses, you are using the wrong operators.)
