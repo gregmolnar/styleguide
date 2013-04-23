@@ -4,6 +4,7 @@ Please add to this guide if you find any particular patterns or styles that we'v
 
 ## Commits
 
+* [Don't write rambling commit messages](http://stopwritingramblingcommitmessages.com/).
 * Make separate commits for logically separate changes.
 * Make separate commits **only** for logically separate changes.
 * Be phrased in the imperative: Add feature, not *Added* feature or *Adds* feature.
