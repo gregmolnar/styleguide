@@ -46,7 +46,6 @@ All `end`'s should be consistently outdented if you do this correctly.
 * Use `then` sparingly. One word conditionals AND code blocks are pretty much the only excuse.
 * Use `&&`/`||` for boolean expressions, `and`/`or` for control flow. (Rule of thumb: If you have to use outer parentheses, you are using the wrong operators.)
 * Avoid multiline ?:, use if.
-* Suppress superfluous parentheses when calling methods, but keep them when calling "functions", i.e. when you use the return value in the same line.
 * Prefer {...} over do...end.  Multiline {...} is fine: having different statement endings (} for blocks, end for if/while/...) makes it easier to see what ends where. But use do...end for "control flow" and "method definitions" (e.g. in Rakefiles and certain DSLs.) Avoid do...end when chaining.
 * Surround the contents within braces {} with a space when used as blocks, and have no spaces when used as a hash.
 * Avoid return where not required.
