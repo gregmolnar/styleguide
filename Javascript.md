@@ -10,7 +10,7 @@ Please add to this guide if you find any particular patterns or styles that we'v
 * Use Unix-style line endings.
 * Use spaces around operators, after commas, colons and semicolons.
 * No spaces after `(`, `[`, `{` and before `}`, `]` and `)`.
-* All statements must end with a semicolon.
+* All statements **must** end with a semicolon.
 * All statements inside of a scope that spans multiple lines should be intended. Scopes on a single line should surround their content with a single space. e.g.
 
 ```javascript
@@ -21,6 +21,22 @@ function() {
 
 // single line
 function() { doSomething(); }
+```
+* All conditionals and loops should have a space between the keyword and the expression.
+* `if else`, `else`, `catch` and `finally` should follow directly after the end of the preceeding condition.
+
+```javascript
+if (something) {
+  doSomething();
+} else {
+  doSomethingElse();
+}
+
+try {
+  doSomething();
+} catch(e) {
+  handleError(e);
+}
 ```
 
 * Use an empty line before the return value of a method (unless it only has one line).
