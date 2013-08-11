@@ -9,8 +9,14 @@ Please add to this guide if you find any particular patterns or styles that we'v
 * Strip whitespace from all empty lines.
 * Use Unix-style line endings.
 * Always include a blank new line at the end of every file.
-* Use spaces around operators, after commas, colons and semicolons.
+* Use spaces around operators (except `!`), after commas, colons and semicolons.
 * No spaces after `(`, `[`, `{` and before `}`, `]` and `)`.
+* No spaces after !.
+
+```ruby
+  !array.include? element
+```
+
 * Don't indent the `when`s, but indent the `when` blocks.
 e.g.
 
@@ -45,6 +51,7 @@ All `end`'s should be consistently outdented if you do this correctly.
 * Never use `for`, unless you exactly know why.
 * Use `then` sparingly. One word conditionals AND code blocks are pretty much the only excuse.
 * Use `&&`/`||` for boolean expressions, `and`/`or` for control flow. (Rule of thumb: If you have to use outer parentheses, you are using the wrong operators.)
+* Use `!` instead of `not`
 * Avoid multiline ?:, use if.
 * Prefer {...} over do...end.  Multiline {...} is fine: having different statement endings (} for blocks, end for if/while/...) makes it easier to see what ends where. But use do...end for "control flow" and "method definitions" (e.g. in Rakefiles and certain DSLs.) Avoid do...end when chaining.
 * Surround the contents within braces {} with a space when used as blocks, and have no spaces when used as a hash.
@@ -70,6 +77,29 @@ All `end`'s should be consistently outdented if you do this correctly.
 
 * Use non-OO regexps (they won't make the code better).  Freely use
   =~, $0-9, $~, $` and $' when needed.
+* Don't use `!` in conditions, use `unless` instead
+* But, prefer `if` over `unless`, using different query methods where appropriate:
+
+```ruby
+  # This is bad
+  if !pages.empty?
+    # ...
+  end
+```
+
+```ruby
+  # This is better
+  unless pages.empty?
+    # ...
+  end
+```
+
+```ruby
+  # This is best
+  if pages.any?
+    # ...
+  end
+```
 
 
 ## Naming
