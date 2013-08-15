@@ -108,29 +108,7 @@ All `end`'s should be consistently outdented if you do this correctly.
 * Use `snake_case` for methods.
 * Use `CamelCase` for classes and modules. (Keep acronyms like HTTP, RFC, XML uppercase.)
 * Use `SCREAMING_SNAKE_CASE` for other constants.
-* The length of an identifier determines its scope. Use one-letter
-  variables for short block/method parameters, according to this
-  scheme:
-
-    a,b,c: any object
-    d: directory names
-    e: rescued exceptions
-    f: files and file names
-    i,j: indexes
-    k: the key part of a hash entry
-    m: methods
-    o: any object
-    r: return values of short methods
-    s: strings
-    v: any value
-    v: the value part of a hash entry
-    x,y,z: numbers
-
-And in general, the first letter of the class name if all objects are of that type.
-
-* Use _ or names prefixed with _ for unused variables.
-* When using inject with short blocks, name the arguments |a, e|
-  (mnemonic: accumulator, element)
+* Be descriptive with block variables and use `_` to identify unused variables.
 * Prefer `map` over `collect`, `find` over `detect`, `find_all` over `select`, `size` over `length`.
 
 
