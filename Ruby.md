@@ -141,7 +141,7 @@ And in general, the first letter of the class name if all objects are of that ty
   describes **what** the method does not **how** it is implemented.
 * All comment blocks should be formatted using yardoc style metadata, this
   allows you to specify parameters, return values, notes etc.
-* Leave no TODO's or NOTE's. Prefer raising a GitHub issue (usually technical
+* Leave no TODOs or NOTEs. Prefer raising a GitHub issue (usually technical
   debt).
 
 ``` ruby
