@@ -114,10 +114,26 @@ All `end`'s should be consistently outdented if you do this correctly.
 
 ## Comments
 
-* Comments longer than a word are capitalised and use punctuation.
-* Avoid superfluous comments, your code should be self documenting.
-* TODOs are fine, but any TODOs over three-months old will be deleted.
-* Profanity is A-OK. If your comment doesn't help me learn, it damn well should make me laugh.
+* Inline comments are to be avoided as the code should be self documenting.
+* If a comment is required use a comment block above the method definition that
+  describes **what** the method does not **how** it is implemented.
+* All comment blocks should be formatted using yardoc style metadata, this
+  allows you to specify parameters, return values, notes etc.
+* Leave no TODOs or NOTEs. Prefer raising a GitHub issue (usually technical
+  debt).
+
+``` ruby
+# Calculates the complexity of a method.
+#
+# @note The call to `foo_bar` is required because of a rails quirk that will be
+#   fixed in 4.1.
+# @see {https://github.com/rails/rails/issue/41}
+# @param [string]
+# @return [Integer] the complexity of a method
+def a_complex_method method_name
+  foo_bar
+end
+```
 
 
 ## Testing
