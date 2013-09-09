@@ -34,8 +34,22 @@ e.g.
 * Indent code after `private` or `protected` statements, but outdent those statements to be inline with the class definition.
 All `end`'s should be consistently outdented if you do this correctly.
 * Ensure a new line after `private` or `protected` keywords.
-* Use an empty line before the return value of a method (unless it only has one line).
-* Use an empty line between method definitions.
+* Use empty lines between defs and to break up a method into logical paragraphs.
+
+```ruby
+def some_method
+  data = initialize options
+
+  data.manipulate!
+
+  data.result
+end
+
+def some_method
+  result
+end
+```
+
 * Document your code consistently where needed using [Yardoc](http://yardoc.org/).
 * Always write a README in the root of the project in Markdown.
 * Use empty lines to break up a long method into logical paragraphs, but try to keep methods short and logical.
