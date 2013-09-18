@@ -101,6 +101,22 @@ All `end`'s should be consistently outdented if you do this correctly.
   end
 ```
 
+* Use trailing commas when defining multiline hashes and arrays, this prevents
+  errors when adding items, and results in better line diffs.
+
+```ruby
+  people = [
+    huey,
+    dewey,
+    louie,
+  ]
+
+  wealth = {
+    donald: "poor",
+    scrooge: "rich",
+  }
+```
+
 
 ## Naming
 
