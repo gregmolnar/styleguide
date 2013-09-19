@@ -101,8 +101,8 @@ All `end`'s should be consistently outdented if you do this correctly.
   end
 ```
 
-* Use trailing commas when defining multiline hashes and arrays, this prevents
-  errors when adding items, and results in better line diffs.
+* When definining multiline hashes and arrays, use trailing commas. This
+  prevents errors when adding items, and results in better line diffs.
 
 ```ruby
   people = [
