@@ -84,7 +84,7 @@ end
 * Expect the default value of arguments to be nil and assign default on first line:
 
 ``` ruby
-  def run(options = nil)
+  def run options = nil
     options ||= {}
     ...
 ```
