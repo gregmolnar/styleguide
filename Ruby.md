@@ -139,7 +139,7 @@ end
 * Use `CamelCase` for classes and modules. (Keep acronyms like HTTP, RFC, XML uppercase.)
 * Use `SCREAMING_SNAKE_CASE` for other constants.
 * Be descriptive with block variables and use `_` to identify unused variables.
-* Prefer `map` over `collect`, `find` over `detect`, `find_all` over `select`, `size` over `length`.
+* Prefer `map` over `collect`, `find` over `detect`, `select` over `find_all`, `size` over `length`.
 
 
 ## Comments
