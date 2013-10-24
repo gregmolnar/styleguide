@@ -31,7 +31,26 @@ e.g.
   end
 ```
 
-* Indent the public, protected, and private methods as much the method definitions they apply to. Leave one blank line above the visibility modifier and one blank line below in order to emphasize that it applies to all methods below it.
+* Indent the `public`, `protected`, and `private` methods as much the method definitions they apply to. Leave one blank line above the visibility modifier and one blank line below in order to emphasize that it applies to all methods below it.
+
+    ```Ruby
+    class SomeClass
+      def public_method
+        # ...
+      end
+
+      private
+
+      def private_method
+        # ...
+      end
+
+      def another_private_method
+        # ...
+      end
+    end
+    ```
+
 * Ensure a new line after `private` or `protected` keywords.
 * Use empty lines between defs and to break up a method into logical paragraphs.
 
