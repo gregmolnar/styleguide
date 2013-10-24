@@ -31,7 +31,8 @@ e.g.
   end
 ```
 
-* Indent the public, protected, and private methods as much the method definitions they apply to. Leave one blank line above the visibility modifier and one blank line below in order to emphasize that it applies to all methods below it.
+* Indent code after `private` or `protected` statements, but outdent those statements to be inline with the class definition.
+All `end`'s should be consistently outdented if you do this correctly.
 * Ensure a new line after `private` or `protected` keywords.
 * Use empty lines between defs and to break up a method into logical paragraphs.
 
