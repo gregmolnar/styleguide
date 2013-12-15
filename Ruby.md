@@ -73,6 +73,19 @@ end
 * Use empty lines to break up a long method into logical paragraphs, but try to keep methods short and logical.
 * Try keep lines fewer than ~80 characters.
 * Place public API methods at the top of your classes.
+* When chaining methods across multiple lines, place the `.` after the newline.
+
+```ruby
+  # Bad
+  Foo.new(blah).
+    bar("other").
+    baz
+
+  # Good
+  Foo.new(blah)
+    .bar("other")
+    .baz
+```
 
 
 ## Syntax
