@@ -11,7 +11,7 @@ Please add to this guide if you find any particular patterns or styles that we'v
 * The first line of a commit message should be;
   * Capitalized.
   * Consise. Soft limit of 50 characters.
-  * Able to explain the commit, if this is hard it's a good inidcator your commit is doing too many things.
+  * Able to explain the commit, if this is hard it's a good indicator your commit is doing too many things.
   * Optionally prefix the message with `area: ` where *area* is a filename or identifier for the general area of the code being modified.
 * The body of the commit message should be:
   * Verbose.
